@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { PromptModel } from '../models/prompt.model';
-import { environment } from '../../environments/environment.ts'
+import { environment } from '../../environments/environment';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable({
