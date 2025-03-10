@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { PromptModel } from '../models/prompt.model';
-import { environment } from '../../environments/environment.development';
+import { environment } from '../../environments/environment.ts'
 import { firstValueFrom } from 'rxjs';
 
 @Injectable({
@@ -22,7 +22,7 @@ export class GptService {
         };
 
         const headers = new HttpHeaders().set("authorization", "Bearer " + environment.apiKey);
-        
+
         const response$ = this.http.post<any>(environment.gptUrl, body, { headers });
 
         const response = await firstValueFrom(response$);
