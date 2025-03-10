@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
-        "qnas"
+        "bazel",
+        "libpeerconnection",
+        "qnas",
+        "testem"
     ]
 }
