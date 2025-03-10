@@ -1,0 +1,9 @@
+div {
+    display: flex;
+    height: 100%;
+}
+
+section {
+    border: 1px solid black;
+    flex: 1;
+}
